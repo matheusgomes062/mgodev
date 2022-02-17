@@ -4,16 +4,20 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
-    CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
-    CarbonLanguage: typeof import('~icons/carbon/language')['default']
-    CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
-    CarbonMoon: typeof import('~icons/carbon/moon')['default']
-    CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
-    CarbonSun: typeof import('~icons/carbon/sun')['default']
-    CarbonWarning: typeof import('~icons/carbon/warning')['default']
+    About: typeof import('./components/About.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    Header: typeof import('./components/Header.vue')['default']
+    IIcRoundModeNight: typeof import('~icons/ic/round-mode-night')['default']
+    IMdiDevTo: typeof import('~icons/mdi/dev-to')['default']
+    IMdiGithub: typeof import('~icons/mdi/github')['default']
+    IMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
+    IMdiMedium: typeof import('~icons/mdi/medium')['default']
+    IMdiTranslate: typeof import('~icons/mdi/translate')['default']
+    IMdiWhiteBalanceSunny: typeof import('~icons/mdi/white-balance-sunny')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
+    Projects: typeof import('./components/Projects.vue')['default']
+    ProjectsContainer: typeof import('./components/ProjectsContainer.vue')['default']
     README: typeof import('./components/README.md')['default']
   }
 }
