@@ -11,6 +11,7 @@ declare module 'vue' {
     IIcRoundModeNight: typeof import('~icons/ic/round-mode-night')['default']
     IMdiDevTo: typeof import('~icons/mdi/dev-to')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
+    IMdiLaunch: typeof import('~icons/mdi/launch')['default']
     IMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
     IMdiMedium: typeof import('~icons/mdi/medium')['default']
     IMdiTranslate: typeof import('~icons/mdi/translate')['default']

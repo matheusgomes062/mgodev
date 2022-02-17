@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import ProjectsContainer from '../components/ProjectsContainer.vue'
-import About from '~/components/About.vue'
 </script>
 
 <template lang="pug">
 About
-ProjectsContainer
+Projects
 </template>
 
 <route lang="yaml">
