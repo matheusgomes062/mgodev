@@ -4,6 +4,7 @@
 <template lang="pug">
 About
 Projects
+Skills
 </template>
 
 <route lang="yaml">

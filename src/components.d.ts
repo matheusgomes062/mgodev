@@ -8,18 +8,16 @@ declare module 'vue' {
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
-    IIcRoundModeNight: typeof import('~icons/ic/round-mode-night')['default']
     IMdiDevTo: typeof import('~icons/mdi/dev-to')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
     IMdiLaunch: typeof import('~icons/mdi/launch')['default']
     IMdiLinkedin: typeof import('~icons/mdi/linkedin')['default']
     IMdiMedium: typeof import('~icons/mdi/medium')['default']
-    IMdiTranslate: typeof import('~icons/mdi/translate')['default']
-    IMdiWhiteBalanceSunny: typeof import('~icons/mdi/white-balance-sunny')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     Projects: typeof import('./components/Projects.vue')['default']
     ProjectsContainer: typeof import('./components/ProjectsContainer.vue')['default']
     README: typeof import('./components/README.md')['default']
+    Skills: typeof import('./components/Skills.vue')['default']
   }
 }
 
