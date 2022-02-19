@@ -6,9 +6,20 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
+  projects: Projects
+  title: MG.
+  skills: Skills
+  contact: Contact
+about:
+  hi i am: Hi, I am
+  i am: A
+  role: front-end developer
+  description: Specialized in front-end with proven technical, organizational and communication skills, working with Agile and designing software solutions. Offering strong Vue skills and experience working with SQL (PostgreSQL), .NET Core, Javascript and more. I recently wrote a book on Markdown about Markdown!)
+  resume: Resume
+  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+projects:
+  title1: PARA Resiliência
+  description1: Site for university research on the proper functioning of restaurants. We created a form with questions from the bank, Google Forms style.
+  title2: The Markdown Guide
+  description2: Book intended to teach and be a guide about Markdown, being the first book of its kind in Brazil. Written in Markdown about Markdown and made available for free!
 not-found: Not found

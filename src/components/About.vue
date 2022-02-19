@@ -1,24 +1,30 @@
 <script setup lang="ts">
+import { about } from '~/portfolio'
+const { t } = useI18n()
+
+const { name, role, description, resume, social } = about
 </script>
 
 <template lang="pug">
-.flex-column.mt-12
-  h1 Olá, me chamo Matheus Gomes
+.flex.flex-col.items-center.mt-12.text-center
+  h1(v-if="name") {{ t('about.hi i am') }} <br/> {{ t(name) }}
 
-  h2(class="mt-6") Sou Front end developer
+  h2(v-if="role" class="mt-6") {{ t('about.i am') }} {{ t(role) }}
 
-  p(class="mt-6 text-center flex") Desenvolvedor full stack especializado em front end com comprovadas habilidades técnicas, organizacionais e de comunicação, trabalhando com Agile e projetando soluções de software. Oferecendo fortes habilidades em Vue e experiência de trabalho com SQL (PostgreSQL), .NET Core, Javascript e muito mais. Recentemente escrevi um livro em Markdown sobre Markwdown!)
+  p(v-if="description" class="mt-10 text-center flex max-w-660px") {{ t(description) }}
 
-  div(class="mt-4 text-center flex flex-row items-center justify-center")
-    a(class="cursor-pointer mr-2")
+  div(class="mt-6 text-center flex flex-row items-end justify-center")
+    a(v-if="resume" :href="t(resume)" class="cursor-pointer mr-2")
       span(type="button" class="btn btn--outline").
-        curriculo
-    a(class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+        {{ t('about.resume') }}
+    a(v-if="social.github" :href="social.github" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-github
-    a(class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.stackoverflow" :href="social.stackoverflow" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+      i-mdi-stack-overflow
+    a(v-if="social.linkedin" :href="social.linkedin" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-linkedin
-    a(class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.devto" :href="social.devto" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-dev-to
-    a(class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.medium" :href="social.medium" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-medium
 </template>

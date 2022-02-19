@@ -6,9 +6,20 @@ button:
   toggle_dark: Alternar modo escuro
   toggle_langs: Mudar de idioma
 intro:
-  desc: Modelo Opinativo de Partida de Vite
-  dynamic-route: Demonstração de rota dinâmica
-  hi: Olá, {name}!
-  aka: Também conhecido como
-  whats-your-name: Qual é o seu nome?
+  title: MG.
+  skills: Skills
+  contact: Contato
+  projects: Projetos
+about:
+  hi i am: Olá, me chamo
+  i am: Sou
+  role: desenvolvedor front-end
+  description: Desenvolvedor full stack especializado em front end com comprovadas habilidades técnicas, organizacionais e de comunicação, trabalhando com Agile e projetando soluções de software. Oferecendo fortes habilidades em Vue e experiência de trabalho com SQL (PostgreSQL), .NET Core, Javascript e muito mais. Recentemente escrevi um livro em Markdown sobre Markwdown!)
+  resume: Currículo
+  resumeUrl: https://app.rezi.ai/s/zMEE6TCqi2LNwQ4xmEGU
+projects:
+  title1: PARA Resiliência
+  description1: Site destinado a pesquisa universitária sobre o bom funcionamento de restaurantes. Criamos um formulário com questões advindas do banco, estilo Google Forms.
+  title2: Guia Markdown
+  description2: Livro destinado a ensinar e ser um guia sobre Markdown, sendo o primeiro livro do genêro no Brasil. Escrito em Markdown sobre Markdown e disponibilizado de forma gratuita!
 not-found: Não encontrado

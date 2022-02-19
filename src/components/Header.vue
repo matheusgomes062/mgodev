@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { header } from '~/portfolio'
+
+const { homepage, title } = header
+
 </script>
 
 <template lang="pug">
-header(class="w-11/12 h-24 max-w-1100px mx-auto justify-between flex flex-row items-center")
+header(class="h-32 max-w-1100px justify-between flex flex-row items-center mx-auto")
   h3
-    a(href="#" class="link") title
+    a(:href="homepage" class="link font-bold p-0") {{ title }}
   Navbar
 </template>

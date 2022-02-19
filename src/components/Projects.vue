@@ -1,11 +1,20 @@
 <script setup lang="ts">
+import { projects } from '~/portfolio'
+const { t } = useI18n()
+
 </script>
 
 <template lang="pug">
 section.section
-  h2.section__title
+  h2.section__title {{ t('intro.projects') }}
   div(class="projects__grid")
-    ProjectsContainer
+    ProjectsContainer(
+      v-for="project in projects"
+      :name="project.name"
+      :description="project.description"
+      :stack="project.stack"
+      :sourceCode="project.sourceCode"
+      :livePreview="project.livePreview")
 </template>
 
 <style>
