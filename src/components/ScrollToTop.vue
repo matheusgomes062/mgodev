@@ -1,15 +1,17 @@
 <script setup lang="ts">
-let scrollToTopIsVisible = false
+import { useSiteStore } from '~/stores/site'
+
+const siteStore = useSiteStore()
 
 const moveUp = () => {
   window.scrollTo(0, 0)
-  scrollToTopIsVisible = false
+  siteStore.setScrollToTop(false)
 }
 </script>
 
 <template lang="pug">
-div(class="scroll-top" v-if="scrollToTopIsVisible")
-  a(href="#" @click="moveUp")
+div(class="scroll-top" v-if="siteStore.scrollToTopIsVisible")
+  a(href="#top" @click="moveUp")
     i-mdi-arrow-up(class="text-3xl")
 </template>
 

@@ -9,10 +9,11 @@ const toggleLocales = () => {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }
+
 const siteStore = useSiteStore()
 
 const toggleNavList = () => {
-  siteStore.fill(!siteStore.showNavList)
+  siteStore.toggleNavList(!siteStore.showNavList)
 }
 </script>
 

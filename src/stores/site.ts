@@ -9,8 +9,11 @@ export const useSiteStore = defineStore ('site', {
   },
 
   actions: {
-    fill(payload: boolean) {
+    toggleNavList(payload: boolean) {
       this.showNavList = payload
+    },
+    setScrollToTop(payload: boolean) {
+      this.scrollToTopIsVisible = payload
     },
   },
 })
