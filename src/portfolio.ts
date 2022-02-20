@@ -39,7 +39,7 @@ const projects = [
   {
     name: 'projects.title3',
     description: 'projects.description3',
-    stack: ['Vue3', 'TypeScript', 'Vite2', 'Pinia', 'Cypress', 'pnpm', 'ESBuild', 'File based routing', 'PWA', 'i18n', 'a11y', 'SEO', 'Composition Api', 'Vitest', 'WindiCSS', 'Markdown', 'SSG'],
+    stack: ['Vue3', 'TypeScript', 'Vite2', 'Pinia', 'Cypress', 'pnpm', 'ESBuild', 'File based routing', 'PWA', 'i18n', 'a11y', 'SEO', 'PugJs', 'Composition Api', 'Vitest', 'WindiCSS', 'Markdown', 'SSG'],
     sourceCode: 'https://github.com/matheusgomes062/mgodev',
     livePreview: 'https://mgodev.vercel.app/',
   },
