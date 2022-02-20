@@ -1,10 +1,15 @@
 <script setup lang="ts">
+let scrollToTopIsVisible = false
 
+const moveUp = () => {
+  window.scrollTo(0, 0)
+  scrollToTopIsVisible = false
+}
 </script>
 
 <template lang="pug">
-div(class="scroll-top")
-  a(href="#")
+div(class="scroll-top" v-if="scrollToTopIsVisible")
+  a(href="#" @click="moveUp")
     i-mdi-arrow-up(class="text-3xl")
 </template>
 
