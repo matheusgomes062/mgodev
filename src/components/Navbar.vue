@@ -19,10 +19,10 @@ nav(class="flex items-center")
     li(class="ml-6")
       a(class="relative pb-1 cursor-pointer link link--nav p-0") {{t('intro.contact')}}
     li(class="ml-6")
-      a(class="relative pb-1 cursor-pointer link link--nav p-0 text-xl" @click="toggleDark()")
+      a(class="relative pb-1 cursor-pointer btn btn--icon p-0 text-xl" @click="toggleDark()")
         i-mdi-white-balance-sunny(v-if="isDark")
         i-ic-round-mode-night(v-else)
     li(class="ml-6" @click="toggleLocales")
-      a(class="relative pb-1 cursor-pointer link link--nav text-xl")
+      a(class="relative pb-1 cursor-pointer btn btn--icon text-xl")
         i-mdi-translate
 </template>
