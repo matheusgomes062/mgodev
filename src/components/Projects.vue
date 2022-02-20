@@ -5,8 +5,8 @@ const { t } = useI18n()
 </script>
 
 <template lang="pug">
-section(class="section" id="projects")
-  h2(class="section__title") {{ t('intro.projects') }}
+section(class="section" aria-labelledby="projects-title" role="region")
+  h2(class="section__title" id="projects") {{ t('intro.projects') }}
   div(class="projects__grid")
     ProjectsContainer(
       v-for="project in projects"

@@ -6,8 +6,8 @@ const { name, role, description, resume, social } = about
 </script>
 
 <template lang="pug">
-div(class="flex flex-col items-center mt-12 text-center")
-  h1(v-if="name" class="font-bold") {{ t('about.hi i am') }} <br/> {{ name }}
+section(class="flex flex-col items-center mt-12 text-center" aria-labelledby="about-title" role="region")
+  h1(v-if="name" class="font-bold" id="about-title") {{ t('about.hi_i_am') }} <br/> {{ name }}
 
   h2(v-if="role" class="mt-6") {{ t('about.i am') }} {{ t(role) }}
 

@@ -5,8 +5,8 @@ const { t } = useI18n()
 </script>
 
 <template lang="pug">
-section(class="section flex flex-col justify-center items-center" id="contact")
-  h2(class="section__title") {{ t('intro.contact') }}
+section(class="section flex flex-col justify-center items-center" id="contact" aria-labelledby="contact-title" role="region")
+  h2(class="section__title" id="contact-title") {{ t('intro.contact') }}
   a(:href="`mailto: ${contact.email}`" class="cursor-pointer")
     span(type="button" class="btn btn--outline") Email me
 </template>

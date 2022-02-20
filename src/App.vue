@@ -6,7 +6,8 @@
 useHead({
   title: 'MGODEV - Portfolio',
   meta: [
-    { name: 'description', content: 'Matheus Gomes - Portfolio' },
+    { name: 'application-name', content: 'Matheus Gomes - Portfolio' },
+    { name: 'description', content: 'Portfolio page by Matheus Gomes', id: 'desc' },
   ],
 })
 </script>

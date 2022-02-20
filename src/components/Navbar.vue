@@ -18,7 +18,7 @@ const toggleNavList = () => {
 </script>
 
 <template lang="pug">
-nav(class="center nav")
+nav(class="center nav" role="navigation")
   ul(class="nav__list" :style="[ siteStore.showNavList ? 'display: flex': '' ]")
     li(class="nav__list-item")
       a(href="#projects" class="link link--nav" @click="toggleNavList") {{t('intro.projects')}}
@@ -26,10 +26,10 @@ nav(class="center nav")
       a(href="#skills" class="link link--nav" @click="toggleNavList") {{t('intro.skills')}}
     li(class="nav__list-item")
       a(href="#contact" class="link link--nav" @click="toggleNavList") {{t('intro.contact')}}
-  button(class="nav__theme" @click="toggleDark()")
+  button(type="button" class="nav__theme" @click="toggleDark()")
       i-mdi-white-balance-sunny(v-if="isDark")
       i-ic-round-mode-night(v-else)
-  button(class="nav__theme" @click="toggleLocales")
+  button(type="button" class="nav__theme" @click="toggleLocales")
       i-mdi-translate
   button(type="button" @click="toggleNavList" class="btn btn--icon nav__hamburger")
     i-mdi-menu(v-if="!siteStore.showNavList")
