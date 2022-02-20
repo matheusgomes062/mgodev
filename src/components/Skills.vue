@@ -5,7 +5,7 @@ const { t } = useI18n()
 
 <template lang="pug">
 section(class="section")
-  h2(class="section__title") {{ t('intro.skills')}}
+  h2(class="section__title font-bold") {{ t('intro.skills')}}
   ul(class="max-w-450px w-95 mx-auto flex flex-wrap justify-center")
     li(class="m-2 btn btn--plain" v-for="skill in skills") {{ skill }}
 </template>
