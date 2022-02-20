@@ -6,6 +6,7 @@ button:
   toggle_dark: Basculer en mode sombre
   toggle_langs: Changer de langue
   skip_to_main_content: Passer au contenu principal
+  open_close: Ouvrir ou fermer la barre de navigation
 intro:
   hi: Salut, {name}!
   projects: Projets

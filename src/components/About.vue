@@ -14,17 +14,17 @@ section(class="flex flex-col items-center mt-12 text-center" aria-labelledby="ab
   p(v-if="description" class="mt-10 text-center flex max-w-660px") {{ t(description) }}
 
   div(class="mt-6 text-center flex flex-row items-end justify-center")
-    a(v-if="resume" :href="t(resume)" class="cursor-pointer mr-2")
+    a(v-if="resume" :href="t(resume)" class="cursor-pointer mr-2" :aria-label="t('about.resume')")
       span(type="button" class="btn btn--outline").
         {{ t('about.resume') }}
-    a(v-if="social.github" :href="social.github" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.github" aria-label="github" :href="social.github" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-github
-    a(v-if="social.stackoverflow" :href="social.stackoverflow" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.stackoverflow" aria-label="stackoverflow" :href="social.stackoverflow" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-stack-overflow
-    a(v-if="social.linkedin" :href="social.linkedin" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.linkedin" aria-label="linkedin" :href="social.linkedin" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-linkedin
-    a(v-if="social.devto" :href="social.devto" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.devto" aria-label="devto" :href="social.devto" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-dev-to
-    a(v-if="social.medium" :href="social.medium" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
+    a(v-if="social.medium" aria-label="medium" :href="social.medium" class="link link--icon text-3xl cursor-pointer mr-2 p-0")
       i-mdi-medium
 </template>

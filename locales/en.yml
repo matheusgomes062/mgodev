@@ -6,6 +6,7 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
   skip_to_main_content: Skip to main content
+  open_close: Open or close navbar
 intro:
   projects: Projects
   title: MG.

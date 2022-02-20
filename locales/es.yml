@@ -6,6 +6,7 @@ button:
   toggle_dark: Alternar modo oscuro
   toggle_langs: Cambiar idiomas
   skip_to_main_content: Saltar al contenido principal
+  open_close: Abrir o cerrar la barra de navegación
 intro:
   projects: Proyectos
   title: MG.

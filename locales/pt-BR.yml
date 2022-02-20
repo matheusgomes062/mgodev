@@ -6,6 +6,7 @@ button:
   toggle_dark: Alternar modo escuro
   toggle_langs: Mudar de idioma
   skip_to_main_content: Ir para o conteúdo principal
+  open_close: Abrir ou fechar a barra de navegação
 intro:
   title: MG.
   skills: Skills

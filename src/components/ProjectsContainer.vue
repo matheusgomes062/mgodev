@@ -19,9 +19,9 @@ div(class="p-8 mx-auto text-center shadow-lg transition-transform ease-in cursor
   ul(v-if="stack" class="flex flex-wrap font-medium text-sm justify-center my-4")
     li(class="project__stack-item" :key="uniqid()" v-for="item in stack") {{ item }}
 
-  a(v-if="sourceCode" class="link link--icon ml-1 text-xl p-0")
+  a(v-if="sourceCode" aria-label="source-code" class="link link--icon ml-1 text-xl p-0" :href="sourceCode")
     i-mdi-github
-  a(v-if="livePreview" class="link link--icon ml-1 text-xl p-0")
+  a(v-if="livePreview" aria-label="live-preview" class="link link--icon ml-1 text-xl p-0" :href="livePreview")
     i-mdi-launch
 </template>
 
