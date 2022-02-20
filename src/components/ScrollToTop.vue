@@ -11,7 +11,7 @@ const moveUp = () => {
 
 <template lang="pug">
 div(class="scroll-top" v-if="siteStore.scrollToTopIsVisible")
-  a(href="#top" @click="moveUp")
+  a(href="#" @click="moveUp")
     i-mdi-arrow-up(class="text-3xl")
 </template>
 

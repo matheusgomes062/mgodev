@@ -23,5 +23,7 @@ projects:
   description1: Site de recherche universitaire sur le bon fonctionnement des restaurants. Nous avons créé un formulaire avec des questions de la banque, style Google Forms.
   title2: Le guide des Markdown
   description2: Livre destiné à enseigner et à guider sur Markdown, étant le premier livre du genre au Brésil. Écrit en Markdown à propos de Markdown et mis à disposition gratuitement!
+  title3: MGODEV - Portfolio
+  description3: Portfolio réalisé à l'aide des technologies les plus avancées et les plus modernes disponibles, mettant à l'épreuve tout ce que je sais !
 
 not-found: Page non trouvée

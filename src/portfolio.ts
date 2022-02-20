@@ -36,14 +36,13 @@ const projects = [
     sourceCode: 'https://github.com/matheusgomes062/guia-markdown',
     livePreview: 'https://drive.google.com/file/d/18sS8Pb7p22uRgDwFTOh1kI4VaVSWDy9Y/view?usp=sharing',
   },
-  // {
-  //   name: 'Project 3',
-  //   description:
-  //     'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-  //   stack: ['SASS', 'TypeScript', 'React'],
-  //   sourceCode: 'https://github.com',
-  //   livePreview: 'https://github.com',
-  // },
+  {
+    name: 'projects.title3',
+    description: 'projects.description3',
+    stack: ['Vue3', 'TypeScript', 'Vite2', 'Pinia', 'Cypress', 'pnpm', 'ESBuild', 'File based routing', 'PWA', 'i18n', 'Composition Api', 'Vitest', 'WindiCSS', 'Markdown', 'SSG'],
+    sourceCode: 'https://github.com/matheusgomes062/mgodev',
+    livePreview: 'https://mgodev.vercel.app/',
+  },
 ]
 
 const skills = [
@@ -62,6 +61,7 @@ const skills = [
   'Bootstrap',
   'Element UI',
   'Vite',
+  'Pinia',
   'Storybook',
   'Clean Code',
   'C#',
@@ -76,7 +76,6 @@ const skills = [
   'UX/UI',
   'Adobe XD',
   'Figma',
-  'Shopify - Dropshipping',
   'Web Design',
   'AI',
   'REST API',
