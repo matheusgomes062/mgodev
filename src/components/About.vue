@@ -9,7 +9,7 @@ const { name, role, description, resume, social } = about
 section(class="flex flex-col items-center mt-12 text-center" aria-labelledby="about-title" role="region")
   h1(v-if="name" class="font-bold" id="about-title") {{ t('about.hi_i_am') }} <br/> {{ name }}
 
-  h2(v-if="role" class="mt-6") {{ t('about.i am') }} {{ t(role) }}
+  h2(v-if="role" class="mt-6") {{ t('about.i_am') }} {{ t(role) }}
 
   p(v-if="description" class="mt-10 text-center flex max-w-660px") {{ t(description) }}
 
