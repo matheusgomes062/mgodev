@@ -5,7 +5,7 @@ const { t } = useI18n()
 </script>
 
 <template lang="pug">
-section(class="section")
+section(class="section" id="projects")
   h2(class="section__title") {{ t('intro.projects') }}
   div(class="projects__grid")
     ProjectsContainer(
