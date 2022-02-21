@@ -25,6 +25,16 @@ describe('Navbar.vue', () => {
     })
     expect(wrapper.html()).toMatchSnapshot()
   })
+
+  it('should change dark theme icon when clicked', async() => {
+    const wrapper = mount(Navbar, {
+      global: {
+        plugins: [i18n, pinia],
+      },
+    })
+    await wrapper.get('[data-test="nav_theme"]').trigger('click')
+    expect(wrapper.html()).toContain('data-test="sun"')
+  })
 })
 
 describe('About.vue', () => {
@@ -34,7 +44,6 @@ describe('About.vue', () => {
         plugins: [i18n],
       },
     })
-    // expect(wrapper.vm.t).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 })
