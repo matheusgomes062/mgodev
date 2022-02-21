@@ -4,9 +4,9 @@
 <template lang="pug">
 About
 Suspense
-  template(#fallback)
-    Projects
   template(#default)
+    Projects
+  template(#fallback)
     ProgressBar
 Skills
 Contact
