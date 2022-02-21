@@ -13,6 +13,7 @@ specifiers:
   '@sinonjs/fake-timers': ^9.1.0
   '@types/jest': ^27.4.0
   '@types/markdown-it-link-attributes': ^3.0.1
+  '@types/moment': ^2.13.0
   '@types/nprogress': ^0.2.0
   '@types/pug': ^2.0.6
   '@types/sinonjs__fake-timers': ^8.1.1
@@ -23,6 +24,7 @@ specifiers:
   '@vue/test-utils': ^2.0.0-rc.18
   '@vueuse/core': ^7.6.2
   '@vueuse/head': ^0.7.5
+  axios: ^0.26.0
   critters: ^0.0.16
   cross-env: ^7.0.3
   cypress: ^9.5.0
@@ -31,6 +33,7 @@ specifiers:
   https-localhost: ^4.7.1
   markdown-it-link-attributes: ^4.0.0
   markdown-it-prism: ^2.2.3
+  moment: ^2.29.1
   nprogress: ^0.2.0
   pinia: ^2.0.11
   pnpm: ^6.31.0
@@ -61,10 +64,13 @@ specifiers:
 
 dependencies:
   '@sinonjs/fake-timers': 9.1.0
+  '@types/moment': 2.13.0
   '@types/pug': 2.0.6
   '@vue/compiler-sfc': 3.2.31
   '@vueuse/core': 7.6.2_vue@3.2.31
   '@vueuse/head': 0.7.5_vue@3.2.31
+  axios: 0.26.0
+  moment: 2.29.1
   nprogress: 0.2.0
   pinia: 2.0.11_typescript@4.5.5+vue@3.2.31
   prism-theme-vars: 0.2.2
@@ -2129,6 +2135,13 @@ packages:
     resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
     dev: true
 
+  /@types/moment/2.13.0:
+    resolution: {integrity: sha1-YE69GJvDvDShVIaJQE5hoqSqyJY=}
+    deprecated: This is a stub types definition for Moment (https://github.com/moment/moment). Moment provides its own type definitions, so you don't need @types/moment installed!
+    dependencies:
+      moment: 2.29.1
+    dev: false
+
   /@types/node/14.18.12:
     resolution: {integrity: sha512-q4jlIR71hUpWTnGhXWcakgkZeHa3CCjcQcnuzU8M891BAWA2jHiziiWEPEkdS5pFsz7H9HJiy8BrK7tBRNrY7A==}
     dev: true
@@ -2878,6 +2891,14 @@ packages:
   /aws4/1.11.0:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
     dev: true
+
+  /axios/0.26.0:
+    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
+    dependencies:
+      follow-redirects: 1.14.9
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /babel-code-frame/6.26.0:
     resolution: {integrity: sha1-Y/1D99weO7fONZR9uP42mj9Yx0s=}
@@ -4995,6 +5016,16 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
+  /follow-redirects/1.14.9:
+    resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
   /foreach/2.0.5:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
     dev: true
@@ -6912,6 +6943,10 @@ packages:
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
+
+  /moment/2.29.1:
+    resolution: {integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==}
+    dev: false
 
   /mrmime/1.0.0:
     resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
