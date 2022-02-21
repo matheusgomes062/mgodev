@@ -13,7 +13,7 @@ const props = defineProps({
   },
   height: {
     // Make lines the same height as text.
-    default: '8em',
+    default: '1em',
     type: String,
   },
   width: {
@@ -37,7 +37,7 @@ span(:style="{ height, width: computedWidth }" class="SkeletonBox")
   position: relative;
   vertical-align: middle;
   overflow: hidden;
-  background-color: #DDDBDD;
+  background-color: var(--clr-bg-skeleton);
   border-radius: 10px;
   margin: 4em 0;
   &::after {

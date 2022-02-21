@@ -7,7 +7,7 @@ Suspense
   template(#default)
     Projects
   template(#fallback)
-    ProgressBar
+    ProgressBar(height="30em")
 Skills
 Contact
 ScrollToTop

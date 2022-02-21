@@ -15,12 +15,13 @@ section(class="section" aria-labelledby="projects-title" role="region")
   h2(class="section__title" id="projects") {{ t('intro.projects') }}
   div(class="projects__grid")
     ProjectsContainer(
-      v-for="project in projects"
+      v-for="(project, index) in projects"
       :name="project.name"
       :description="project.description"
       :stack="project.stack"
       :sourceCode="project.sourceCode"
-      :livePreview="project.livePreview")
+      :livePreview="project.livePreview"
+      :style="`animation-delay: 0.${ index }s;`")
 </template>
 
 <style>
@@ -31,4 +32,6 @@ section(class="section" aria-labelledby="projects-title" role="region")
     margin: 0 auto;
     max-width: 1100px;
 }
+
+.delay { animation-delay: 0.6s; }
 </style>

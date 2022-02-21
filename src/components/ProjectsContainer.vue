@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template lang="pug">
-div(class="p-8 mx-auto text-center shadow-lg transition-transform ease-in cursor-pointer transform transition-transform duration-150 ease-linear hover:scale-102" style="box-shadow: var(--shadow)")
+div(class="p-8 mx-auto text-center shadow-lg transition-transform ease-in cursor-pointer transform transition-transform duration-150 ease-linear hover:scale-102 animate glow" style="box-shadow: var(--shadow)")
   h3(class="font-bold") {{ t(name) }}
   p(v-if="description" class="mt-4") {{ t(description) }}
   ul(v-if="stack" class="flex flex-wrap font-medium text-sm justify-center my-4")
@@ -31,5 +31,36 @@ div(class="p-8 mx-auto text-center shadow-lg transition-transform ease-in cursor
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--clr-fg-alt);
+}
+
+.animate {
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+/* Glow In */
+.animate.glow {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate { animation: none !important; }
 }
 </style>
