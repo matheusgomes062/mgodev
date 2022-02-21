@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import ScrollToTop from '../components/ScrollToTop.vue'
 </script>
 
 <template lang="pug">
 About
-Projects
+Suspense
+  template(#fallback)
+    Projects
+  template(#default)
+    ProgressBar
 Skills
 Contact
 ScrollToTop

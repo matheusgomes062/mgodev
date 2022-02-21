@@ -2,6 +2,12 @@
 import { projects } from '~/portfolio'
 const { t } = useI18n()
 
+function delay() {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 2000)
+  })
+}
+await delay()
 </script>
 
 <template lang="pug">

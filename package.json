@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@types/pug": "^2.0.6",
-    "@vue/cli-plugin-unit-jest": "^5.0.1",
     "@vue/compiler-sfc": "^3.2.31",
     "@vueuse/core": "^7.6.2",
     "@vueuse/head": "^0.7.5",
@@ -21,12 +20,12 @@
     "pinia": "^2.0.11",
     "prism-theme-vars": "^0.2.2",
     "pug": "^3.0.2",
+    "sass": "^1.49.8",
     "uniqid": "^5.4.0",
     "vite-plugin-style-import": "^2.0.0",
     "vue": "^3.2.31",
     "vue-demi": "^0.12.1",
     "vue-i18n": "^9.1.9",
-    "vue-jest": "^3.0.7",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
@@ -44,6 +43,7 @@
     "@types/nprogress": "^0.2.0",
     "@types/uniqid": "^5.3.2",
     "@vitejs/plugin-vue": "^2.2.2",
+    "@vue/cli-plugin-unit-jest": "^5.0.1",
     "@vue/test-utils": "^2.0.0-rc.18",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
@@ -67,6 +67,7 @@
     "vite-plugin-windicss": "^1.7.1",
     "vite-ssg": "^0.17.10",
     "vitest": "^0.3.6",
+    "vue-jest": "^3.0.7",
     "vue-tsc": "^0.31.4"
   }
 }
