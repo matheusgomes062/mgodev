@@ -12,6 +12,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@sinonjs/fake-timers": "^9.1.0",
     "@types/pug": "^2.0.6",
     "@vue/compiler-sfc": "^3.2.31",
     "@vueuse/core": "^7.6.2",
@@ -41,6 +42,7 @@
     "@types/jest": "^27.4.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
+    "@types/sinonjs__fake-timers": "^8.1.1",
     "@types/uniqid": "^5.3.2",
     "@vitejs/plugin-vue": "^2.2.2",
     "@vue/cli-plugin-unit-jest": "^5.0.1",

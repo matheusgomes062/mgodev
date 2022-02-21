@@ -10,10 +10,12 @@ specifiers:
   '@iconify-json/ic': ^1.1.0
   '@iconify-json/mdi': ^1.1.0
   '@intlify/vite-plugin-vue-i18n': ^3.3.0
+  '@sinonjs/fake-timers': ^9.1.0
   '@types/jest': ^27.4.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/nprogress': ^0.2.0
   '@types/pug': ^2.0.6
+  '@types/sinonjs__fake-timers': ^8.1.1
   '@types/uniqid': ^5.3.2
   '@vitejs/plugin-vue': ^2.2.2
   '@vue/cli-plugin-unit-jest': ^5.0.1
@@ -58,6 +60,7 @@ specifiers:
   vue-tsc: ^0.31.4
 
 dependencies:
+  '@sinonjs/fake-timers': 9.1.0
   '@types/pug': 2.0.6
   '@vue/compiler-sfc': 3.2.31
   '@vueuse/core': 7.6.2_vue@3.2.31
@@ -87,6 +90,7 @@ devDependencies:
   '@types/jest': 27.4.0
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/nprogress': 0.2.0
+  '@types/sinonjs__fake-timers': 8.1.1
   '@types/uniqid': 5.3.2
   '@vitejs/plugin-vue': 2.2.2_vite@2.8.4+vue@3.2.31
   '@vue/cli-plugin-unit-jest': 5.0.1
@@ -1992,13 +1996,18 @@ packages:
     resolution: {integrity: sha512-xkNcLAn/wZaX14RPlwizcKicDk9G3F8m2nU3L7Ukm5zBgTwiT0wsoFAHx9Jq56fJA1z/7uKGtCRu16sOUCLIHQ==}
     dependencies:
       type-detect: 4.0.8
-    dev: true
 
   /@sinonjs/fake-timers/8.1.0:
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
     dependencies:
       '@sinonjs/commons': 1.8.3
     dev: true
+
+  /@sinonjs/fake-timers/9.1.0:
+    resolution: {integrity: sha512-M8vapsv9qQupMdzrVzkn5rb9jG7aUTEPAZdMtME2PuBaefksFZVE2C1g4LBRTkF/k3nRDNbDc5tp5NFC1PEYxA==}
+    dependencies:
+      '@sinonjs/commons': 1.8.3
+    dev: false
 
   /@surma/rollup-plugin-off-main-thread/2.2.3:
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -8627,7 +8636,6 @@ packages:
   /type-detect/4.0.8:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
-    dev: true
 
   /type-fest/0.16.0:
     resolution: {integrity: sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==}
