@@ -1,22 +1,40 @@
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import Counter from '../src/components/Counter.vue'
+import About from '../src/components/About.vue'
+import Header from '../src/components/Header.vue'
+import Navbar from '../src/components/Navbar.vue'
+import { i18n, pinia } from './setup/setup'
 
-describe('Counter.vue', () => {
+describe('Header.vue', () => {
   it('should render', () => {
-    const wrapper = mount(Counter, { props: { initial: 10 } })
-    expect(wrapper.text()).toContain('10')
+    const wrapper = mount(Header, {
+      global: {
+        plugins: [i18n, pinia],
+      },
+    })
     expect(wrapper.html()).toMatchSnapshot()
   })
+})
 
-  it('should be interactive', async() => {
-    const wrapper = mount(Counter, { props: { initial: 0 } })
-    expect(wrapper.text()).toContain('0')
+describe('Navbar.vue', () => {
+  it('should render', () => {
+    const wrapper = mount(Navbar, {
+      global: {
+        plugins: [i18n, pinia],
+      },
+    })
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+})
 
-    expect(wrapper.find('.inc').exists()).toBe(true)
-
-    await wrapper.get('button').trigger('click')
-
-    expect(wrapper.text()).toContain('1')
+describe('About.vue', () => {
+  it('should render', () => {
+    const wrapper = mount(About, {
+      global: {
+        plugins: [i18n],
+      },
+    })
+    // expect(wrapper.vm.t).toBeTruthy()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })

@@ -1,4 +1,4 @@
-import path from 'path'
+import path, { resolve } from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
@@ -44,6 +44,7 @@ export default defineConfig({
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
+        'vitest',
       ],
       dts: 'src/auto-imports.d.ts',
     }),
@@ -170,7 +171,9 @@ export default defineConfig({
     include: ['test/**/*.test.ts'],
     environment: 'jsdom',
     deps: {
-      inline: ['@vue', '@vueuse', 'vue-demi'],
+      inline: ['@vue', '@vueuse', 'vue-demi', '@vue/composition-api'],
     },
+    setupFiles: [resolve(__dirname, 'test/setup/setup.ts')],
+    reporters: 'dot',
   },
 })

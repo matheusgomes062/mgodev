@@ -76,7 +76,7 @@ nav(class="center nav" role="navigation")
   .nav__hamburger {
     display: flex;
     z-index: 2;
-    margin-left: 0.8em;
+    font-size: large;
   }
 }
 
