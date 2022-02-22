@@ -6,6 +6,6 @@ const { t } = useI18n()
 <template lang="pug">
 section(class="section" id="skills" aria-labelledby="skills-title" role="region")
   h2(class="section__title font-bold" id="skills-title") {{ t('intro.skills')}}
-  ul(class="max-w-450px w-95 mx-auto flex flex-wrap justify-center")
+  ul(class="max-w-1100px w-full mx-auto flex flex-wrap justify-center")
     li(class="m-2 btn btn--plain" v-for="skill in skills") {{ skill }}
 </template>
