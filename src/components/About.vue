@@ -17,12 +17,12 @@ const cardBgImage = computed(() => {
 </script>
 
 <template lang="pug">
-section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card")
+section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card" data-tilt)
   div(class="card")
     div(class="card-bg" :style="cardBgImage")
     div(class="card-info")
       h1(v-if="name" class="font-bold text-5xl" id="about-title") {{ t('about.hi_i_am') }} <br/>
-      h1(class="font-bold") {{ name }}
+      h1(class="font-bold cool-gradient-title") {{ name }}
 
       h2(v-if="role" class="mt-6") {{ t('about.i_build') }}
 
@@ -45,5 +45,24 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
 </template>
 
 <style scoped lang="scss">
-@import './styles/card-parallax.scss'
+@import './styles/card-parallax.scss';
+
+.cool-gradient-title {
+background-image: linear-gradient(
+  90deg,
+  hsl(193deg 71% 56%) 0%,
+  hsl(197deg 100% 46%) 11%,
+  hsl(204deg 100% 48%) 22%,
+  hsl(211deg 100% 49%) 33%,
+  hsl(219deg 100% 47%) 44%,
+  hsl(249deg 75% 56%) 56%,
+  hsl(260deg 76% 55%) 67%,
+  hsl(269deg 77% 53%) 78%,
+  hsl(278deg 77% 50%) 89%,
+  hsl(286deg 100% 44%) 100%
+);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 </style>

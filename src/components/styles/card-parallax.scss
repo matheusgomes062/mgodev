@@ -19,13 +19,14 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 /*
 A number of blogs have expressed the performance gain in 'tricking' the GPU to think that an element is 3D by using transform: translateZ(0) to speed up animations and transitions. I was wondering if there are implications to using this transform in the following manner:
 */
-* {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-}
+// * {
+//     -webkit-transform: translateZ(0);
+//     -moz-transform: translateZ(0);
+//     -ms-transform: translateZ(0);
+//     -o-transform: translateZ(0);
+//     transform: translateZ(0);
+//     -webkit-transform: translate3d(0,0,0);
+// }
 
 .card-wrap {
   border-radius: 1em;

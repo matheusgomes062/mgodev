@@ -9,7 +9,6 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
 //   transform: translateZ(0);
 // }
 
-
 .project__stack-item {
   margin: 0.5em;
   font-weight: 500;
@@ -23,6 +22,7 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
   animation-name: animate-fade;
   animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
   animation-fill-mode: backwards;
+  border-radius: 1em;
 }
 
 /* grow In */

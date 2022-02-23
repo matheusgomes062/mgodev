@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// import { ref } from 'vue'
 import uniqid from 'uniqid'
 
 const { t } = useI18n()
@@ -10,10 +11,15 @@ defineProps({
   sourceCode: String,
   livePreview: String,
 })
+
+// VanillaTilt.init(document.querySelector('.card'))
+// const card = ref()
+// VanillaTilt.init(document.querySelector('.cardTilt'))
+// VanillaTilt.init(card.value)
 </script>
 
 <template lang="pug">
-div(class="transition-transform ease-in transform transition-transform duration-150 ease-linear hover:scale-102 animate grow")
+div(class="transition-transform ease-in transform transition-transform duration-150 ease-linear hover:scale-102 animate grow cardTilt")
   div(class="card p-8 mx-auto text-center h-full flex flex-col justify-between")
     div(class="header")
       h3(class="font-bold") {{ t(name) }}
