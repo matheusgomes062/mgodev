@@ -1,3 +1,15 @@
+/*
+A number of blogs have expressed the performance gain in 'tricking' the GPU to think that an element is 3D by using transform: translateZ(0) to speed up animations and transitions. I was wondering if there are implications to using this transform in the following manner:
+*/
+// * {
+//   -webkit-transform: translateZ(0);
+//   -moz-transform: translateZ(0);
+//   -ms-transform: translateZ(0);
+//   -o-transform: translateZ(0);
+//   transform: translateZ(0);
+// }
+
+
 .project__stack-item {
   margin: 0.5em;
   font-weight: 500;
