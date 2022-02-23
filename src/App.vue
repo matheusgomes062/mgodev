@@ -3,13 +3,6 @@
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 
-useHead({
-  title: 'MGODEV - Portfolio',
-  meta: [
-    { name: 'application-name', content: 'Matheus Gomes - Portfolio' },
-    { name: 'description', content: 'Portfolio page by Matheus Gomes', id: 'desc' },
-  ],
-})
 </script>
 
 <template>

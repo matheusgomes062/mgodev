@@ -1,0 +1,97 @@
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.animate {
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+/* grow In */
+.animate.grow {
+  animation-name: animate-grow;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-grow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.card {
+  border-radius: 1em;
+  z-index: 1;
+  cursor: pointer;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(black, 0.50) 0 20px 30px 0;
+}
+
+.card:hover:before {
+  content: "";
+  width: 102%;
+  height: 102%;
+  border-radius: 1.2em;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -1%;
+  animation: spin 2.5s linear infinite;
+  box-shadow: none;
+}
+
+.card:hover:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 101%;
+  width: 100%;
+  filter: blur(1.5em);
+  background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
+  opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+  box-shadow: none;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+// .card:hover {
+//   transition: color 2s;
+// }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate { animation: none !important; }
+}

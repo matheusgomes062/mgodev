@@ -11,8 +11,8 @@ await delay()
 </script>
 
 <template lang="pug">
-section(class="section" aria-labelledby="projects-title" role="region")
-  h2(class="section__title" id="projects-title") {{ t('intro.projects') }}
+section(class="section" aria-labelledby="projects" role="region")
+  h2(class="section__title" id="projects") {{ t('intro.projects') }}
   div(class="projects__grid")
     ProjectsContainer(
       v-for="(project, index) in projects"

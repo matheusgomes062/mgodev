@@ -1,13 +1,20 @@
 @import './markdown.css';
 @import './reset.css';
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 @font-face {
   font-family: 'Poppins';
   font-display: swap;
 }
+
+--gray0: #f8f8f8;
+--gray1: #dbe1e8;
+--gray2: #b2becd;
+--gray3: #6c7983;
+--gray4: #454e56;
+--gray5: #2a2e35;
+--gray6: #12181b;
 
 html {
   font-family: 'Poppins', sans-serif;
@@ -18,7 +25,7 @@ html {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #006633;
+  --clr-primary: black;
   --clr-bg-skeleton: #DDDBDD;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -45,20 +52,23 @@ html {
   --clr-bg-skeleton: #DDDBDD;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #42b883;
+  --clr-primary: black;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
+  /* --clr-bg: #23283e; */
+  /* --clr-bg-alt: #2a2f4c; */
+  --clr-bg: #12181b;
+  --clr-bg-alt: #2a2e35;
+  --clr-fg: #b2becd;
+  --clr-fg-alt: #fff;
   --clr-bg-skeleton: #9FA2B5;
   --clr-primary: white;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow-2: rgba(black, 0.66) 0 30px 60px 0;
     $variable: clr-primary white;
 }
 
@@ -121,7 +131,6 @@ main {
 
 .btn {
   display: block;
-  cursor: pointer;
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
