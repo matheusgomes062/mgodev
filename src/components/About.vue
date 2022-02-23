@@ -21,9 +21,10 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
   div(class="card")
     div(class="card-bg" :style="cardBgImage")
     div(class="card-info")
-      h1(v-if="name" class="font-bold" id="about-title") {{ t('about.hi_i_am') }} <br/> {{ name }}
+      h1(v-if="name" class="font-bold text-5xl" id="about-title") {{ t('about.hi_i_am') }} <br/>
+      h1(class="font-bold") {{ name }}
 
-      h2(v-if="role" class="mt-6") {{ t('about.i_am') }} {{ t(role) }}
+      h2(v-if="role" class="mt-6") {{ t('about.i_build') }}
 
       p(v-if="description" class="mt-10 text-left flex max-w-660px") {{ t(description) }}
 

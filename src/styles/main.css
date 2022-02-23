@@ -15,6 +15,7 @@
 --gray4: #454e56;
 --gray5: #2a2e35;
 --gray6: #12181b;
+--clr-circle: #4e00c2;
 
 html {
   font-family: 'Poppins', sans-serif;
@@ -26,6 +27,7 @@ html {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: black;
+  --clr-circle: #5ddcff;
   --clr-bg-skeleton: #DDDBDD;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -69,7 +71,8 @@ html {
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   --shadow-2: rgba(black, 0.66) 0 30px 60px 0;
-    $variable: clr-primary white;
+  --clr-circle: #4e00c2;
+  $variable: clr-primary white;
 }
 
 main {

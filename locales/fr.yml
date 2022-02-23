@@ -17,7 +17,8 @@ about:
   hi_i_am: Bonjour, mon nom est
   i_am: Je suis
   role: Ingénieur logiciel
-  description: Spécialisé dans la construction (et parfois la conception) d'expériences numériques extraordinaires. Travaille actuellement au développement d'une nouvelle expérience d'enseignement en ligne
+  i_build: Je construis des choses pour le web.
+  description: Je suis un Ingénieur logiciel spécialisé dans la construction (et parfois la conception) d'expériences numériques extraordinaires. Travaille actuellement au développement d'une nouvelle expérience d'enseignement en ligne
   resume: Résumé
   resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
 projects:

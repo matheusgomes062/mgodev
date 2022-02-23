@@ -13,10 +13,11 @@ intro:
   skills: Skills
   contact: Contact
 about:
-  hi_i_am: Hi, I am
+  hi_i_am: Hi, my name is
   i_am: A
   role: Software engineer
-  description: Specializing in building (and occasionally designing) extraordinary digital experiences. Currently working to develop a new online teaching experience
+  i_build: I build things for the web.
+  description: I'm a Software Engineer specializing in building (and occasionally designing) extraordinary digital experiences. Currently working to develop a new online teaching experience
   resume: Resume
   resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
 projects:
