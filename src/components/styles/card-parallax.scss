@@ -18,7 +18,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 .card-wrap {
   border-radius: 1em;
-  transform: perspective(800px);
+  // transform: perspective(800px);
   transform-style: preserve-3d;
   background-color: var(--clr-bg-alt);
 
@@ -27,6 +27,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     width: 101%;
     height: 102%;
     border-radius: 1.2em;
+    transform: translate3d(0, 0, 0);
     background-image: linear-gradient(
       var(--rotate)
       , #5ddcff, #3c67e3 43%, #4e00c2);
@@ -48,6 +49,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     height: 102%;
     width: 102%;
     filter: blur(1.5em);
+    transform: translate3d(0, 0, 0);
     background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
     opacity: 1;
     transition: opacity .5s;
@@ -58,7 +60,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   &:hover {
     .card-info {
       transition: 0.6s $hoverEasing;
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
       p {
         opacity: 1;
       }
@@ -69,7 +71,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     .card-info:after {
       transition: 0.1s $hoverEasing;
       opacity: 1;
-      transform: translateY(0);
+      transform: translate3d(0, 0, 0);
     }
     .card-bg {
       transition: 
@@ -113,7 +115,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   width: 100%;
   bottom: 0;
   color: var(--clr-fg-alt);
-  transform: translateY(40%);
+  transform: translate3d(0, 40%, 0);
   transition: 0.6s 0.6s $returnEasing;
   
   p {
@@ -136,7 +138,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     height: 100%;
     background-blend-mode: overlay;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translate3d(0, 100%, 0);
     transition: 0.6s 0.6s $returnEasing;
   }
 }
@@ -166,7 +168,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     z-index: 2;
   }
   .card-wrap {
-    transform: perspective(600px);
+    // transform: perspective(600px);
     
     &:hover:before {
       width: 104%;
