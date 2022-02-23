@@ -15,8 +15,8 @@ intro:
 about:
   hi_i_am: Olá, me chamo
   i_am: Sou
-  role: desenvolvedor full-stack
-  description: Desenvolvedor full stack especializado em front end com comprovadas habilidades técnicas, organizacionais e de comunicação, trabalhando com Agile e projetando soluções de software. Oferecendo fortes habilidades em Vue e experiência de trabalho com SQL (PostgreSQL), .NET Core, Javascript e muito mais. Recentemente escrevi um livro em Markdown sobre Markwdown!
+  role: Engenheiro de Software
+  description: Especializado em construir (e ocasionalmente projetar) experiências digitais extraordinárias. Atualmente, trabalhando para desenvolver uma nova experiência de ensino online
   resume: Currículo
   resumeUrl: https://app.rezi.ai/s/zMEE6TCqi2LNwQ4xmEGU
 projects:

@@ -9,6 +9,7 @@ const about = {
   name: 'Matheus Gomes',
   role: 'about.role',
   description: 'about.description',
+  bg_image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   resume: 'about.resumeUrl',
   social: {
     linkedin: 'https://www.linkedin.com/in/matheus-gomes-dev/',

@@ -18,29 +18,33 @@ onUnmounted(() => {
 
 <template lang="pug">
 <!-- Aria skip link -->
-ul(class="skipLink")
-  li
-    a(href='#main' ref='skipLink') Skip to main content
+a(href='#main' class="skipLink" ref='skipLink') Skip to main content
 Header
 main(@scroll.passive="onScroll" id="main" role="main")
   router-view()
 Footer
 </template>
 
-<style scoped>
+<style>
 .skipLink {
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
   white-space: nowrap;
   margin: 1em auto;
   top: 0;
-  position: fixed;
+  /* position: fixed; */
   left: 50%;
+  height: 30px;
   margin-left: -72px;
   opacity: 0;
 }
+
 .skipLink:focus {
   opacity: 1;
   background-color: white;
   padding: 0.5em;
   border: 1px solid black;
+  transform: translateY(0%);
 }
 </style>

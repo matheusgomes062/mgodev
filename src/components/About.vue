@@ -1,77 +1,25 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { about } from '~/portfolio'
 const { t } = useI18n()
 
 const { name, role, description, resume, social } = about
 
-let width: number
-let height: number
-let mouseX: number
-let mouseY: number
-let mouseLeaveDelay: NodeJS.Timeout
-
 const card = ref()
 
-onMounted(() => {
-  width = card.value.offsetWidth
-  height = card.value.offsetHeight
-})
-
-const mousePX = computed(() => {
-  return mouseX / width
-})
-
-const mousePY = computed(() => {
-  return mouseY / height
-})
-
-const cardStyle = computed(() => {
-  const rX = mousePX.value * 30
-  const rY = mousePY.value * -30
-  return {
-    transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
-  }
-})
-
-const cardBgTransform = computed(() => {
-  const tX = mousePX.value * -40
-  const tY = mousePY.value * -40
-  return {
-    transform: `translateX(${tX}px) translateY(${tY}px)`,
-  }
-})
-
-const dataImage = 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+const dataImage = about.bg_image
 
 const cardBgImage = computed(() => {
   return {
     backgroundImage: `url(${dataImage})`,
   }
 })
-
-const handleMouseMove = (e: any) => {
-  mouseX = e.pageX - card.value.offsetLeft - width / 2
-  mouseY = e.pageY - card.value.offsetTop - height / 2
-}
-
-const handleMouseEnter = () => {
-  console.log('teste')
-  clearTimeout(mouseLeaveDelay)
-}
-
-const handleMouseLeave = () => {
-  mouseLeaveDelay = setTimeout(() => {
-    mouseX = 0
-    mouseY = 0
-  }, 1000)
-}
 </script>
 
 <template lang="pug">
-section(class="card-wrap" aria-labelledby="about-title" role="region" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" ref="card")
-  div(class="card" :style="cardStyle")
-    div(class="card-bg" :style="[cardBgTransform, cardBgImage]")
+section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card")
+  div(class="card")
+    div(class="card-bg" :style="cardBgImage")
     div(class="card-info")
       h1(v-if="name" class="font-bold" id="about-title") {{ t('about.hi_i_am') }} <br/> {{ name }}
 

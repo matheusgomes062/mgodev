@@ -20,8 +20,8 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   border-radius: 1em;
   transform: perspective(800px);
   transform-style: preserve-3d;
-  // cursor: pointer;
   background-color: var(--clr-bg-alt);
+
   &:hover:before {
     content: "";
     width: 101%;
@@ -57,6 +57,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   
   &:hover {
     .card-info {
+      transition: 0.6s $hoverEasing;
       transform: translateY(0);
       p {
         opacity: 1;
@@ -66,25 +67,16 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
       transition: 0.6s $hoverEasing;
     }
     .card-info:after {
-      transition: 5s $hoverEasing;
+      transition: 0.1s $hoverEasing;
       opacity: 1;
       transform: translateY(0);
     }
     .card-bg {
       transition: 
-        0.6s $hoverEasing,
-        opacity 5s $hoverEasing;
+        3s $hoverEasing,
+        opacity 3s $hoverEasing;
       opacity: 0.8;
     }
-    // .card {
-      // transition:
-      //   0.6s $hoverEasing,
-      //   box-shadow 2s $hoverEasing;
-      // box-shadow:
-      //   rgba(white, 0.2) 0 0 40px 20px,
-      //   rgba(white, 1) 0 0 0 5px,
-      //   rgba(black, 0.66) 0 30px 60px 0;
-    // }
   }
 }
 
@@ -96,7 +88,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   border-radius: 1em;
   box-shadow:
     rgba(black, 0.50) 0 20px 30px 0;
-  transition: 1s $returnEasing;
+  transition: 0.6s $returnEasing;
 
 }
 
@@ -111,24 +103,23 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   background-size: cover;
   transition:
     1s $returnEasing,
-    opacity 5s 1s $returnEasing;
+    opacity 3s 1s $returnEasing;
   pointer-events: none;
 }
 
 .card-info {
-  padding: 4em;
+  padding: 6em 4em;
   position: absolute;
   width: 100%;
   bottom: 0;
   color: var(--clr-fg-alt);
   transform: translateY(40%);
-  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 0.6s 0.6s $returnEasing;
   
   p {
     opacity: 0;
     font-size: 1rem;
-    // text-shadow: rgba(black, 1) 0 2px 3px;
-    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.6s 0.6s $returnEasing;
   }
   
   * {
@@ -146,6 +137,63 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     background-blend-mode: overlay;
     opacity: 0;
     transform: translateY(100%);
-    transition: 5s 1s $returnEasing;
+    transition: 0.6s 0.6s $returnEasing;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .card {
+    height: 75vh;
+  }
+  .card-bg {
+    background: none !important;
+    width: 500px;
+    height: 500px;
+    background-color: #3c67e3 !important;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: -30vh;
+    left: 30vw;
+
+  }
+  .card-info {
+    padding: 3em 1em;
+    height: fit-content;
+    background-color: transparent;
+    z-index: 2;
+  }
+  .card-wrap {
+    transform: perspective(600px);
+    
+    &:hover:before {
+      width: 104%;
+      height: 102%;
+      left: -2%;
+    }
+    &:hover {
+      .card-bg {
+        top: 20vh;
+        left: -10vw;
+        background-color: #4e00c2 !important;
+      }
+      .card-info{
+        padding: 3em 1em;
+        a {
+          color: black;
+        }
+        h1, h2 {
+          opacity: 0.3;
+          color: black;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: black;
+        }
+      }
+    }
   }
 }
