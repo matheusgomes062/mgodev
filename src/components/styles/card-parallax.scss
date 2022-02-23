@@ -29,6 +29,7 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
 // }
 
 .card-wrap {
+  cursor: pointer;
   border-radius: 1em;
   transform: perspective(800px);
   transform-style: preserve-3d;
