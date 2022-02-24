@@ -1,0 +1,37 @@
+:root {
+  --step--2: clamp(3.13rem, 2.62rem + 2.51vw, 5.76rem);
+  --step--1: clamp(3.75rem, 3.09rem + 3.29vw, 7.20rem);
+  --step-0: clamp(4.50rem, 3.64rem + 4.29vw, 9.00rem);
+}
+
+
+@keyframes marquee-r {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
+}
+
+.marquee {
+  height: calc(170px + 4rem);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.track {
+  overflow: hidden;
+  padding: 2rem 0;
+  position: absolute;
+  white-space: nowrap;
+  
+  & .text {
+    animation: marquee 3000ms linear infinite;
+    align-items: center;
+    display: inline-flex;
+    will-change: transform;
+    
+    &.-r {
+      animation-name: marquee-r;
+    }
+    
+  }
+}
