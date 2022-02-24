@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     About: typeof import('./components/About.vue')['default']
     Contact: typeof import('./components/Contact.vue')['default']
+    Experience: typeof import('./components/Experience.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     IIcRoundModeNight: typeof import('~icons/ic/round-mode-night')['default']
@@ -21,6 +22,7 @@ declare module 'vue' {
     IMdiTranslate: typeof import('~icons/mdi/translate')['default']
     IMdiWhiteBalanceSunny: typeof import('~icons/mdi/white-balance-sunny')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
+    Profile: typeof import('./components/Profile.vue')['default']
     ProgressBar: typeof import('./components/ProgressBar.vue')['default']
     Projects: typeof import('./components/Projects.vue')['default']
     ProjectsContainer: typeof import('./components/ProjectsContainer.vue')['default']

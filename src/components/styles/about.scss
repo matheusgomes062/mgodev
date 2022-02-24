@@ -90,6 +90,15 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
         opacity 3s $hoverEasing;
       opacity: 0.8;
     }
+    .profile-container {
+      transition: 
+        3s $hoverEasing,
+        opacity 3s $hoverEasing;
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow:
+        rgba(black, 0.50) 0 20px 30px 0;
+    }
   }
 }
 
@@ -118,6 +127,11 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
     1s $returnEasing,
     opacity 3s 1s $returnEasing;
   pointer-events: none;
+}
+
+h1, h2, p, .link-div{
+  width: fit-content;
+  background: transparent;
 }
 
 .card-info {
@@ -154,9 +168,20 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
   }
 }
 
+.circle {
+  width: 20em;
+  height: 20em;
+  background-color: #3c67e3 !important;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 1070px) {
   .card {
     height: 75vh;
   }
@@ -177,6 +202,9 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
     height: fit-content;
     background-color: transparent;
     z-index: 2;
+  }
+  .profile-container {
+    display: none;
   }
   .card-wrap {
     transform: perspective(600px);
@@ -210,3 +238,21 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
     }
   }
 }
+
+.profile-container {
+  transform: perspective(600px);
+  width: 30%;
+  height: 60%;
+  border-radius: 2em;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  background-image: url("https://avatars.githubusercontent.com/u/47605309?v=4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 
+    4s $hoverEasing;
+  opacity: 0;
+  transform: translateY(180%);
+}
+

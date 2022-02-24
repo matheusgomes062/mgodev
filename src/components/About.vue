@@ -28,7 +28,7 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
 
       p(v-if="description" class="mt-10 text-left flex max-w-660px") {{ t(description) }}
 
-      div(class="mt-6 text-center flex flex-row items-end justify-start")
+      div(class="mt-6 text-center flex flex-row items-end justify-start link-div")
         a(v-if="resume" :href="t(resume)" class="cursor-pointer mr-2" :aria-label="t('about.resume')")
           span(type="button" class="btn btn--outline").
             {{ t('about.resume') }}
@@ -42,10 +42,11 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
           i-mdi-dev-to
         a(v-if="social.medium" aria-label="medium" :href="social.medium" class="link link--icon text-3xl  mr-2 p-0")
           i-mdi-medium
+    div(class="profile-container")
 </template>
 
 <style scoped lang="scss">
-@import './styles/card-parallax.scss';
+@import './styles/about.scss';
 
 .cool-gradient-title {
 background-image: linear-gradient(
