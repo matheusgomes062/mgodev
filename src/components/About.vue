@@ -42,7 +42,9 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
           i-mdi-dev-to
         a(v-if="social.medium" aria-label="medium" :href="social.medium" class="link link--icon text-3xl  mr-2 p-0")
           i-mdi-medium
-    div(class="profile-container")
+
+    //- div(class="profile-container hexagon")
+    div(class="profile")
 </template>
 
 <style scoped lang="scss">

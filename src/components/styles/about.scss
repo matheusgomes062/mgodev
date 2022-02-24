@@ -90,7 +90,14 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
         opacity 3s $hoverEasing;
       opacity: 0.8;
     }
-    .profile-container {
+    .profile-container::before {
+      transition: 
+        3.5s $hoverEasing,
+        opacity 3.5s $hoverEasing;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .profile {
       transition: 
         3s $hoverEasing,
         opacity 3s $hoverEasing;
@@ -206,6 +213,9 @@ h1, h2, p, .link-div{
   .profile-container {
     display: none;
   }
+  .profile {
+    display: none;
+  }
   .card-wrap {
     transform: perspective(600px);
     
@@ -239,7 +249,31 @@ h1, h2, p, .link-div{
   }
 }
 
-.profile-container {
+.profile-container::before {
+  content: "";
+  width: 30%;
+  height: 60%;
+  border-radius: 2em;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  filter: blur(2em);
+  transition: 
+    4s $hoverEasing;
+  opacity: 0;
+  transform: translateY(180%);
+  // background-image: linear-gradient( #a003b4, #e36b3c 43%, #FFEA00);
+  
+  // background-image: linear-gradient(#5ddcff, #3c67e3 43%, #4e00c2);
+  opacity: 0;
+  transition: 
+    3.5s $hoverEasing,
+    opacity 3.5s $hoverEasing;
+  animation: spin 2.5s linear infinite;
+  box-shadow: none;
+}
+
+.profile {
   transform: perspective(600px);
   width: 30%;
   height: 60%;
@@ -251,8 +285,8 @@ h1, h2, p, .link-div{
   background-repeat: no-repeat;
   background-size: cover;
   transition: 
-    4s $hoverEasing;
-  opacity: 0;
+    3s $hoverEasing;
+  opacity: 0.7;
   transform: translateY(180%);
 }
 
