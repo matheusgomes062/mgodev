@@ -19,14 +19,14 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 /*
 A number of blogs have expressed the performance gain in 'tricking' the GPU to think that an element is 3D by using transform: translateZ(0) to speed up animations and transitions. I was wondering if there are implications to using this transform in the following manner:
 */
-// * {
-//     -webkit-transform: translateZ(0);
-//     -moz-transform: translateZ(0);
-//     -ms-transform: translateZ(0);
-//     -o-transform: translateZ(0);
-//     transform: translateZ(0);
-//     -webkit-transform: translate3d(0,0,0);
-// }
+* {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+}
 
 .card-wrap {
   cursor: pointer;
@@ -90,7 +90,7 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
         opacity 3s $hoverEasing;
       opacity: 0.8;
     }
-    .profile-container::before {
+    .profile-background-line {
       transition: 
         3.5s $hoverEasing,
         opacity 3.5s $hoverEasing;
@@ -210,7 +210,7 @@ h1, h2, p, .link-div{
     background-color: transparent;
     z-index: 2;
   }
-  .profile-container {
+  .profile-background-line {
     display: none;
   }
   .profile {
@@ -249,7 +249,7 @@ h1, h2, p, .link-div{
   }
 }
 
-.profile-container::before {
+.profile-background-line::before {
   content: "";
   width: 30%;
   height: 60%;
@@ -280,13 +280,65 @@ h1, h2, p, .link-div{
   border-radius: 1.3em;
   position: absolute;
   top: 20%;
-  right: 2%;
+  right: 4%;
   background-image: url("https://avatars.githubusercontent.com/u/47605309?v=4");
   background-repeat: no-repeat;
   background-size: cover;
   transition: 
     3s $hoverEasing;
-  opacity: 0.7;
+  opacity: 1;
   transform: translateY(180%);
+  z-index: 0;
 }
 
+.profile-background-line {
+  transform: perspective(600px);
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 1.3em;
+  width: 30%;
+  height: 60%;
+  top: 20%;
+  right: 4%;
+  transition: 
+    3s $hoverEasing;
+  opacity: 0;
+  transform: translateY(180%);
+
+  &::after {
+    border: 2px solid var(--clr-primary);
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.3em;
+  }
+}
+
+
+.cool-gradient-title {
+  background-image: linear-gradient(
+    90deg,
+    hsl(193deg 71% 56%) 0%,
+    hsl(197deg 100% 46%) 11%,
+    hsl(204deg 100% 48%) 22%,
+    hsl(211deg 100% 49%) 33%,
+    hsl(219deg 100% 47%) 44%,
+    hsl(249deg 75% 56%) 56%,
+    hsl(260deg 76% 55%) 67%,
+    hsl(269deg 77% 53%) 78%,
+    hsl(278deg 77% 50%) 89%,
+    hsl(286deg 100% 44%) 100%
+  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
