@@ -10,17 +10,28 @@ const moveUp = () => {
 </script>
 
 <template lang="pug">
-div(class="scroll-top" v-if="siteStore.scrollToTopIsVisible")
+div(class="scroll-top btn btn--plain" v-if="siteStore.scrollToTopIsVisible")
   a(href="#" @click="moveUp")
     i-mdi-arrow-up(class="text-3xl")
 </template>
 
-<style>
+<style lang="scss" scoped>
 .scroll-top {
   position: fixed;
   bottom: 2em;
   right: 4em;
-  background-color: transparent;
+  border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(black, 0.50) 0 20px 30px 0;
+  background-color: var(--clr-bg-alt);
+
+  a {
+    color: var(--clr-fg-alt);
+  }
 }
 
 @media (max-width: 900px) {
