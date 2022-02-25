@@ -29,7 +29,7 @@ section(class="card-wrap" aria-labelledby="about-title" role="region" ref="card"
       p(v-if="description" class="mt-10 text-left flex max-w-660px") {{ t(description) }}
 
       div(class="mt-6 text-center flex flex-row items-end justify-start link-div")
-        a(v-if="resume" :href="t(resume)" class="cursor-pointer mr-2" :aria-label="t('about.resume')")
+        a(v-if="resume" href="./assets/[en-US] Matheus Gomes - Software Engineer.pdf" download="matheus-gomes-resume" class="cursor-pointer mr-2" :aria-label="t('about.resume')")
           span(type="button" class="btn btn--outline rounded-md").
             {{ t('about.resume') }}
         a(v-if="social.github" aria-label="github" :href="social.github" class="link link--icon text-3xl  mr-2 p-0")
