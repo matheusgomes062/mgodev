@@ -81,6 +81,10 @@ const skills = [
   { name: 'REST API', icon: 'eos-icons:api-outlined' },
   { name: 'Git', icon: 'logos-git-icon' },
   { name: 'Jest', icon: 'vscode-icons:file-type-jest' },
+  { name: 'WindiCSS', icon: 'simple-icons:windicss' },
+  { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
+  { name: 'Vitest', icon: 'vscode-icons:file-type-vitest' },
+
 ]
 
 const contact = {
