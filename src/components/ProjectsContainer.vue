@@ -27,7 +27,7 @@ div(class="card-wrap")
       h3(class="font-bold") {{ t(props.name) }}
       p(v-if="props.description" class="mt-4") {{ t(props.description) }}
       div(class="flex flex-wrap w-full stack-container")
-        h5(for="stack" class="text-sm ml-1 font-bold") {{ t('projects.tech_used') }}
+        p(for="stack" class="text-sm ml-1 font-bold") {{ t('projects.tech_used') }}
         ul(v-if="props.stack" id="stack" class="flex flex-wrap w-full text-xs justify-start my-2")
           li(class="project__stack-item" :key="uniqid()" v-for="item in props.stack") {{ item }}
 
