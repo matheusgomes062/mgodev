@@ -21,6 +21,7 @@ section(class="section" aria-labelledby="projects" role="region")
       :stack="project.stack"
       :sourceCode="project.sourceCode"
       :livePreview="project.livePreview"
+      :bgImage="project.bgImage"
       :style="`animation-delay: 0.${ index }s;`")
 </template>
 

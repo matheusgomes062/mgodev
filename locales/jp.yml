@@ -21,6 +21,7 @@ about:
   resume: カリキュラム
   resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
 projects:
+  tech_used: 使用したテクノロジー
   title1: PARA Resiliência
   description1: レストランの適切な機能に関する大学の研究サイト。銀行からの質問を含むフォーム、Googleフォームスタイルを作成しました。
   title2: The Markdown Guide

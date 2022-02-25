@@ -21,6 +21,7 @@ about:
   resume: Curriculum
   resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
 projects:
+  tech_used: Technologies used
   title1: PARA Resiliência
   description1: Site for university research on the proper functioning of restaurants. We created a form with questions from the bank, Google Forms style.
   title2: The Markdown Guide

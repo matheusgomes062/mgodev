@@ -21,6 +21,7 @@ about:
   resume: Currículo
   resumeUrl: https://app.rezi.ai/s/zMEE6TCqi2LNwQ4xmEGU
 projects:
+  tech_used: Tecnologias utilizadas
   title1: PARA Resiliência
   description1: Site destinado a pesquisa universitária sobre o bom funcionamento de restaurantes. Criamos um formulário com questões advindas do banco, estilo Google Forms.
   title2: Guia Markdown

@@ -29,6 +29,7 @@ const projects = [
     stack: ['Vue2', 'SASS', 'Vuex', 'Vue Router', 'Element UI', 'PugJs', 'Vercel', 'Bootstrap'],
     sourceCode: 'https://github.com/matheusgomes062/app-resiliencia',
     livePreview: 'https://app-resiliencia.vercel.app/',
+    bgImage: 'https://user-images.githubusercontent.com/47605309/155584050-fe6039f7-2616-4fab-9403-ba7b7743d8f4.png',
   },
   {
     name: 'projects.title2',
@@ -36,6 +37,7 @@ const projects = [
     stack: ['Markdown'],
     sourceCode: 'https://github.com/matheusgomes062/guia-markdown',
     livePreview: 'https://drive.google.com/file/d/18sS8Pb7p22uRgDwFTOh1kI4VaVSWDy9Y/view?usp=sharing',
+    bgImage: 'https://user-images.githubusercontent.com/47605309/155583890-adb2059d-f0fc-43e5-814c-e3963fbe6501.png',
   },
   {
     name: 'projects.title3',
@@ -43,6 +45,7 @@ const projects = [
     stack: ['Vue3', 'TypeScript', 'Vite2', 'Pinia', 'Cypress', 'pnpm', 'ESBuild', 'File based routing', 'PWA', 'i18n', 'a11y', 'SEO', 'PugJs', 'Composition Api', 'Vitest', 'WindiCSS', 'Markdown', 'SSG'],
     sourceCode: 'https://github.com/matheusgomes062/mgodev',
     livePreview: 'https://mgodev.vercel.app/',
+    bgImage: 'https://user-images.githubusercontent.com/47605309/155583590-fd3f2eca-79b7-4625-902a-d6260b6e4fce.png',
   },
   // {
   //   name: 'projects.title4',

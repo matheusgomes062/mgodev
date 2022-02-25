@@ -9,12 +9,76 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
 //   transform: translateZ(0);
 // }
 
+$hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
+$returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+
+@keyframes animate-grow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
 
 .project__stack-item {
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--clr-fg-alt);
+  text-transform: initial;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(
+      50deg,
+      hsl(240deg 100% 61%) 0%,
+      hsl(266deg 91% 56%) 0%,
+      hsl(284deg 100% 46%) 0%,
+      hsl(295deg 100% 43%) 0%,
+      hsl(306deg 100% 45%) 1%,
+      hsl(315deg 100% 49%) 2%,
+      hsl(319deg 100% 50%) 4%,
+      hsl(323deg 100% 50%) 6%,
+      hsl(327deg 100% 50%) 9%,
+      hsl(331deg 100% 50%) 14%,
+      hsl(334deg 100% 50%) 20%,
+      hsl(343deg 100% 56%) 28%,
+      hsl(357deg 100% 64%) 38%,
+      hsl(10deg 100% 63%) 51%,
+      hsl(20deg 100% 60%) 64%,
+      hsl(29deg 100% 56%) 74%,
+      hsl(36deg 100% 51%) 82%,
+      hsl(41deg 100% 50%) 88%,
+      hsl(45deg 100% 50%) 92%,
+      hsl(48deg 100% 50%) 95%,
+      hsl(52deg 100% 50%) 98%,
+      hsl(55deg 100% 50%) 100%
+    );
+  animation: spin 2.5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 }
 
 .animate {
@@ -32,78 +96,155 @@ A number of blogs have expressed the performance gain in 'tricking' the GPU to t
   animation-timing-function: ease;
 }
 
-@keyframes animate-grow {
-  0% {
-    opacity: 0;
-    filter: brightness(3) saturate(3);
-    transform: scale(0.8, 0.8);
+.card-wrap {
+  border-radius: 1em;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  background-color: var(--clr-bg-alt);
+  // box-shadow: rgba(black, 0.50) 0 20px 30px 0;
+  box-shadow: 0px 8px 60px -10px rgb(13 28 39 / 60%);
+  backface-visibility: hidden;
+
+  &:hover:before {
+    content: "";
+    width: 103%;
+    height: 102%;
+    border-radius: 1.2em;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -1.5%;
+    animation: spin 2.5s linear infinite;
+    box-shadow: none;
   }
-  100% {
+
+  &:hover:after {
+    position: absolute;
+    content: "";
+    top: -1%;
+    left: -0.5%;
+    right: 0;
+    z-index: -1;
+    height: 102%;
+    width: 102%;
+    filter: blur(1.5em);
+    background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
     opacity: 1;
-    filter: brightness(1) saturate(1);
-    transform: scale(1, 1);
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+    box-shadow: none;
+  }
+
+  &:hover {
+    .card-bg {
+      transition: 
+        3s $hoverEasing,
+        opacity 3s $hoverEasing;
+      opacity: 0.8;
+    }
+    .card-info {
+      transition: 0.6s $hoverEasing;
+      transform: translateY(0);
+      p {
+        opacity: 1;
+      }
+    }
+    .card-info, .card-info p {
+      transition: 0.6s $hoverEasing;
+    }
+    .card-info:after {
+      transition: 0.1s $hoverEasing;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .stack-container {
+      transition: 
+        3s $hoverEasing,
+        opacity 3s $hoverEasing;
+      opacity: 1;
+    }
   }
 }
 
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
 
 .card {
+  position: relative;
+  overflow: hidden;
   border-radius: 1em;
   z-index: 1;
   cursor: pointer;
   background-color: var(--clr-bg-alt);
   box-shadow: rgba(black, 0.50) 0 20px 30px 0;
+  transition: 0.6s $returnEasing;
+
 }
 
-.card:hover:before {
-  content: "";
-  width: 102%;
-  height: 102%;
-  border-radius: 1.2em;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
+.card-bg {
+  opacity: 0.5;
   position: absolute;
-  z-index: -1;
-  top: -1%;
-  left: -1%;
-  animation: spin 2.5s linear infinite;
-  box-shadow: none;
-}
-
-.card:hover:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 101%;
   width: 100%;
-  filter: blur(1.5em);
-  background-image: linear-gradient( var(--rotate) , #5ddcff, #3c67e3 43%, #4e00c2);
-  opacity: 1;
-  transition: opacity .5s;
-  animation: spin 2.5s linear infinite;
-  box-shadow: none;
+  height: 100%;
+  border-radius: 1em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition:
+    1s $returnEasing,
+    opacity 3s 1s $returnEasing;
+  pointer-events: none;
 }
 
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
+h1, h2, p, .link-div{
+  width: fit-content;
+  background: transparent;
+}
+
+.card-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: var(--clr-fg-alt);
+  transform: translateY(70%);
+  transition: 0.6s 0.6s $returnEasing;
+
+  p {
+    opacity: 0;
+    font-size: 1rem;
+    transition: 0.6s 0.6s $hoverEasing;
   }
-  100% {
-    --rotate: 360deg;
+  
+  * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.6s 0.6s $returnEasing;
   }
 }
 
-// .card:hover {
-//   transition: color 2s;
-// }
+.stack-container {
+  opacity: 0;
+  border-radius: 0.5rem;
+  color: var(--clr-primary);
+  background-color: var(--clr-bg);
+  box-shadow: 0px 8px 20px -10px rgb(13 28 39 / 60%);
+  padding: 0.5rem;
+  transition: 0.6s 0.6s $hoverEasing;text-transform: initial;
+}
 
 @media screen and (prefers-reduced-motion: reduce) {
   .animate { animation: none !important; }

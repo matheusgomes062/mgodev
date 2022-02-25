@@ -188,67 +188,6 @@ h1, h2, p, .link-div{
 
 
 
-@media (max-width: 1070px) {
-  .card {
-    height: 75vh;
-  }
-  .card-bg {
-    background: none !important;
-    width: 500px;
-    height: 500px;
-    background-color: #3c67e3 !important;
-    border-radius: 50%;
-    z-index: 1;
-    position: absolute;
-    top: -30vh;
-    left: 30vw;
-
-  }
-  .card-info {
-    padding: 3em 1em;
-    height: fit-content;
-    background-color: transparent;
-    z-index: 2;
-  }
-  .profile-background-line {
-    display: none;
-  }
-  .profile {
-    display: none;
-  }
-  .card-wrap {
-    transform: perspective(600px);
-    
-    &:hover:before {
-      width: 104%;
-      height: 102%;
-      left: -2%;
-    }
-    &:hover {
-      .card-bg {
-        top: 20vh;
-        left: -10vw;
-        background-color: var(--clr-circle) !important;
-      }
-      .card-info{
-        padding: 3em 1em;
-        a {
-          color: var(--clr-primary);
-        }
-        h1, h2 {
-          opacity: 0.3;
-          color: var(--clr-primary);
-        }
-        p {
-          font-size: 1.4rem;
-          font-weight: 500;
-          color: var(--clr-primary);
-        }
-      }
-    }
-  }
-}
-
 .profile-background-line::before {
   content: "";
   width: 30%;
@@ -258,9 +197,6 @@ h1, h2, p, .link-div{
   top: 20%;
   right: 2%;
   filter: blur(2em);
-  transition: 
-    4s $hoverEasing;
-  opacity: 0;
   transform: translateY(180%);
   // background-image: linear-gradient( #a003b4, #e36b3c 43%, #FFEA00);
   
@@ -269,7 +205,6 @@ h1, h2, p, .link-div{
   transition: 
     3.5s $hoverEasing,
     opacity 3.5s $hoverEasing;
-  animation: spin 2.5s linear infinite;
   box-shadow: none;
 }
 
@@ -301,8 +236,8 @@ h1, h2, p, .link-div{
   height: 60%;
   top: 20%;
   right: 4%;
-  transition: 
-    3s $hoverEasing;
+  transition: 0.6s $hoverEasing,
+    4.5s $hoverEasing;
   opacity: 0;
   transform: translateY(180%);
 
@@ -342,3 +277,66 @@ h1, h2, p, .link-div{
     -webkit-background-clip: text;
     color: transparent;
   }
+
+  
+@media (max-width: 1070px) {
+  .card {
+    height: 75vh;
+  }
+  .card-bg {
+    background: none !important;
+    width: 500px;
+    height: 500px;
+    background-color: #3c67e3 !important;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: -30vh;
+    left: 30vw;
+
+  }
+  .card-info {
+    padding: 3em 1em;
+    height: fit-content;
+    background-color: transparent;
+    z-index: 2;
+  }
+  .profile-background-line {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .card-wrap {
+    transform: perspective(600px);
+    
+    &:hover:before {
+      width: 102%;
+      height: 102%;
+      top: -1%;
+      left: -1%;
+    }
+    &:hover {
+      .card-bg {
+        top: 20vh;
+        left: -10vw;
+        background-color: var(--clr-circle) !important;
+      }
+      .card-info{
+        padding: 3em 1em;
+        a {
+          color: var(--clr-primary);
+        }
+        h1, h2 {
+          opacity: 0.3;
+          color: var(--clr-primary);
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: var(--clr-primary);
+        }
+      }
+    }
+  }
+}

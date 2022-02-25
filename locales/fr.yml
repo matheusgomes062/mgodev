@@ -22,6 +22,7 @@ about:
   resume: Résumé
   resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
 projects:
+  tech_used: Technologies utilisées
   title1: PARA Resiliência
   description1: Site de recherche universitaire sur le bon fonctionnement des restaurants. Nous avons créé un formulaire avec des questions de la banque, style Google Forms.
   title2: Le guide des Markdown
