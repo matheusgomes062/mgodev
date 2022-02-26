@@ -1,31 +1,44 @@
+about:
+  description: >-
+    I'm a Software Engineer specializing in building (and occasionally
+    designing) extraordinary digital experiences. Currently working to develop a
+    new online teaching experience
+  hi_i_am: Hi, my name is
+  i_am: A
+  i_build: I build things for the web.
+  resume: Curriculum
+  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  role: Software engineer
 button:
   about: About
   back: Back
   go: GO
   home: Home
+  open_close: Open or close navbar
+  skip_to_main_content: Skip to main content
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-  skip_to_main_content: Skip to main content
-  open_close: Open or close navbar
 intro:
-  projects: Projects
-  title: MG.
-  skills: Skills
   contact: Contact
-about:
-  hi_i_am: Hi, my name is
-  i_am: A
-  role: Software engineer
-  i_build: I build things for the web.
-  description: I'm a Software Engineer specializing in building (and occasionally designing) extraordinary digital experiences. Currently working to develop a new online teaching experience
-  resume: Curriculum
-  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  projects: Projects
+  skills: Skills
+  title: MG.
+learning_right_now: Learning right now
+not_found: Not found
 projects:
+  description1: >-
+    Site for university research on the proper functioning of restaurants. We
+    created a form with questions from the bank, Google Forms style.
+  description2: >-
+    Book intended to teach and be a guide about Markdown, being the first book
+    of its kind in Brazil. Written in Markdown about Markdown and made available
+    for free!
+  description3: >-
+    Portfolio made using the most advanced and modern technologies available,
+    putting everything I know to the test!
   tech_used: Technologies used
   title1: PARA Resiliência
-  description1: Site for university research on the proper functioning of restaurants. We created a form with questions from the bank, Google Forms style.
   title2: The Markdown Guide
-  description2: Book intended to teach and be a guide about Markdown, being the first book of its kind in Brazil. Written in Markdown about Markdown and made available for free!
   title3: MGODEV - Portfolio
-  description3: Portfolio made using the most advanced and modern technologies available, putting everything I know to the test!
-not_found: Not found
+using_or_used_before: Using or used before
+wants_to_learn: I want to learn

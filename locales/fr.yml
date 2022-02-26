@@ -1,33 +1,46 @@
+about:
+  description: >-
+    Je suis un Ingénieur logiciel spécialisé dans la construction (et parfois la
+    conception) d'expériences numériques extraordinaires. Travaille actuellement
+    au développement d'une nouvelle expérience d'enseignement en ligne
+  hi_i_am: Bonjour, mon nom est
+  i_am: Je suis
+  i_build: Je construis des choses pour le web.
+  resume: Résumé
+  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  role: Ingénieur logiciel
 button:
   about: À propos de
   back: Retour
   go: Essayer
   home: Accueil
+  open_close: Ouvrir ou fermer la barre de navigation
+  skip_to_main_content: Passer au contenu principal
   toggle_dark: Basculer en mode sombre
   toggle_langs: Changer de langue
-  skip_to_main_content: Passer au contenu principal
-  open_close: Ouvrir ou fermer la barre de navigation
 intro:
+  contact: Contact
   hi: Salut, {name}!
   projects: Projets
-  title: MG.
-  contact: Contact
   skills: Skills
-about:
-  hi_i_am: Bonjour, mon nom est
-  i_am: Je suis
-  role: Ingénieur logiciel
-  i_build: Je construis des choses pour le web.
-  description: Je suis un Ingénieur logiciel spécialisé dans la construction (et parfois la conception) d'expériences numériques extraordinaires. Travaille actuellement au développement d'une nouvelle expérience d'enseignement en ligne
-  resume: Résumé
-  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  title: MG.
+learning_right_now: Apprendre maintenant
+not-found: Page non trouvée
 projects:
+  description1: >-
+    Site de recherche universitaire sur le bon fonctionnement des restaurants.
+    Nous avons créé un formulaire avec des questions de la banque, style Google
+    Forms.
+  description2: >-
+    Livre destiné à enseigner et à guider sur Markdown, étant le premier livre
+    du genre au Brésil. Écrit en Markdown à propos de Markdown et mis à
+    disposition gratuitement!
+  description3: >-
+    Portfolio réalisé à l'aide des technologies les plus avancées et les plus
+    modernes disponibles, mettant à l'épreuve tout ce que je sais !
   tech_used: Technologies utilisées
   title1: PARA Resiliência
-  description1: Site de recherche universitaire sur le bon fonctionnement des restaurants. Nous avons créé un formulaire avec des questions de la banque, style Google Forms.
   title2: Le guide des Markdown
-  description2: Livre destiné à enseigner et à guider sur Markdown, étant le premier livre du genre au Brésil. Écrit en Markdown à propos de Markdown et mis à disposition gratuitement!
   title3: MGODEV - Portfolio
-  description3: Portfolio réalisé à l'aide des technologies les plus avancées et les plus modernes disponibles, mettant à l'épreuve tout ce que je sais !
-
-not-found: Page non trouvée
+using_or_used_before: Utilisation ou utilisation antérieure
+wants_to_learn: Je veux apprendre

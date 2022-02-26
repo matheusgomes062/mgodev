@@ -1,32 +1,36 @@
+about:
+  description: >-
+    私はソフトウェアエンジニアであり、並外れたデジタルエクスペリエンスの構築（場合によっては設計）を専門としています。現在、新しいオンライン教育体験の開発に取り組んでいます
+  hi_i_am: こんにちは、私の名前は
+  i_build: 私はウェブのために物を作ります。
+  resume: カリキュラム
+  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  role: ソフトウェアエンジニア
 button:
   about: だいたい
   back: 戻る
   go: 行く
   home: 家
+  open_close: ナビゲーションバーを開くまたは閉じる
+  skip_to_main_content: メインコンテンツにスキップ
   toggle_dark: ダークモードを切り替えます
   toggle_langs: 言語を変更する
-  skip_to_main_content: メインコンテンツにスキップ
-  open_close: ナビゲーションバーを開くまたは閉じる
 intro:
-  projects: プロジェクト
-  title: MG.
-  skills: スキル
   contact: 連絡先
-about:
-  hi_i_am: こんにちは、私の名前は
-  # i_am: A
-  role: ソフトウェアエンジニア
-  i_build: 私はウェブのために物を作ります。
-  description: 私はソフトウェアエンジニアであり、並外れたデジタルエクスペリエンスの構築（場合によっては設計）を専門としています。現在、新しいオンライン教育体験の開発に取り組んでいます
-  resume: カリキュラム
-  resumeUrl: https://app.rezi.ai/s/pjj4bdj2XZTaGtmWhpL2
+  projects: プロジェクト
+  skills: スキル
+  title: MG.
+learning_right_now: 今学ぶ
+not_found: 見つかりません
 projects:
+  description1: レストランの適切な機能に関する大学の研究サイト。銀行からの質問を含むフォーム、Googleフォームスタイルを作成しました。
+  description2: >-
+    ブラジルでこの種の最初の本であるMarkdownについて教え、ガイドになることを目的とした本。
+    MarkdownについてMarkdownで書かれ、無料で利用できるようになりました！
+  description3: 利用可能な最先端の最新テクノロジーを使用して作成されたポートフォリオで、私が知っているすべてのものをテストします。
   tech_used: 使用したテクノロジー
   title1: PARA Resiliência
-  description1: レストランの適切な機能に関する大学の研究サイト。銀行からの質問を含むフォーム、Googleフォームスタイルを作成しました。
   title2: The Markdown Guide
-  description2: ブラジルでこの種の最初の本であるMarkdownについて教え、ガイドになることを目的とした本。 MarkdownについてMarkdownで書かれ、無料で利用できるようになりました！
   title3: MGODEV - Portfolio
-  description3: 利用可能な最先端の最新テクノロジーを使用して作成されたポートフォリオで、私が知っているすべてのものをテストします。
-not_found: 見つかりません
-
+using_or_used_before: 使用または以前に使用
+wants_to_learn: 学びたい
