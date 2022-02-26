@@ -26,7 +26,7 @@ div(class="scroll-top btn btn--plain" v-if="siteStore.scrollToTopIsVisible")
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(black, 0.50) 0 20px 30px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.38);
   background-color: var(--clr-bg-alt);
 
   a {

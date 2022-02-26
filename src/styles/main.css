@@ -23,10 +23,10 @@ html {
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
-  --clr-bg: #fcfcfc;
-  --clr-bg-alt: #fff;
-  --clr-fg: #555;
-  --clr-fg-alt: #444;
+  --clr-bg: #fff;
+  --clr-bg-alt: #f8f8f8;
+  --clr-fg: #6c7983;
+  --clr-fg-alt: #454e56;
   --clr-primary: black;
   --clr-circle: #5ddcff;
   --clr-bg-skeleton: #DDDBDD;
