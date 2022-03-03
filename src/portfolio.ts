@@ -91,7 +91,7 @@ const skills = [
   { name: 'AWS - iam', icon: 'logos:aws-iam', learning: true },
   { name: 'Redis', icon: 'logos:redis', learning: true },
   { name: 'Postgresql', icon: 'logos:postgresql', learning: false },
-  { name: 'Java', icon: 'logos:java', learning: true },
+  { name: 'Java', icon: 'logos:java', learning: false, wantsToLearn: true },
   { name: 'Post CSS', icon: 'logos:postcss', learning: true },
   { name: 'Serverless', icon: 'logos:serverless', learning: true },
   { name: 'Blockchain', icon: 'logos:bitcoin', learning: false, wantsToLearn: true },

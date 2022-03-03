@@ -144,7 +144,7 @@ main {
 }
 
 .link--nav {
-  color: var(--clr-fg);
+  color: var(--clr-fg-alt);
   text-transform: lowercase;
   font-weight: 500;
 }
