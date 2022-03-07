@@ -28,7 +28,7 @@ const projects = [
     description: 'projects.description1',
     stack: ['Vue2', 'SASS', 'Vuex', 'Vue Router', 'Element UI', 'PugJs', 'Vercel', 'Bootstrap'],
     sourceCode: 'https://github.com/matheusgomes062/app-resiliencia',
-    livePreview: 'https://app-resiliencia.vercel.app/',
+    // livePreview: 'https://app-resiliencia.vercel.app/',
     bgImage: 'https://user-images.githubusercontent.com/47605309/155584050-fe6039f7-2616-4fab-9403-ba7b7743d8f4.png',
   },
   {
