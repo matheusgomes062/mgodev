@@ -29,7 +29,7 @@ not-found: Page non trouvée
 projects:
   description1: >-
     Site de recherche universitaire sur le bon fonctionnement des restaurants.
-    Nous avons créé un formulaire avec des questions de la banque, style Google
+    Nous avons créé un formulaire avec des questions de la base de donnéss, style Google
     Forms.
   description2: >-
     Livre destiné à enseigner et à guider sur Markdown, étant le premier livre

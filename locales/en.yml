@@ -28,7 +28,7 @@ not_found: Not found
 projects:
   description1: >-
     Site for university research on the proper functioning of restaurants. We
-    created a form with questions from the bank, Google Forms style.
+    created a form with questions from the database, Google Forms style.
   description2: >-
     Book intended to teach and be a guide about Markdown, being the first book
     of its kind in Brazil. Written in Markdown about Markdown and made available

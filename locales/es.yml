@@ -28,7 +28,7 @@ not-found: No se ha encontrado
 projects:
   description1: >-
     Sitio de investigación universitaria sobre el buen funcionamiento de los
-    restaurantes. Creamos un formulario con preguntas del banco, estilo Google
+    restaurantes. Creamos un formulario con preguntas del banco de dados, estilo Google
     Forms.
   description2: >-
     Livro destinado a ensinar e ser um guia sobre Markdown, sendo o primeiro

@@ -28,7 +28,7 @@ not-found: Não encontrado
 projects:
   description1: >-
     Site destinado a pesquisa universitária sobre o bom funcionamento de
-    restaurantes. Criamos um formulário com questões advindas do banco, estilo
+    restaurantes. Criamos um formulário com questões advindas do banco de dados, estilo
     Google Forms.
   description2: >-
     Livro destinado a ensinar e ser um guia sobre Markdown, sendo o primeiro
